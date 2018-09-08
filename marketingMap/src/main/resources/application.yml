@@ -1,0 +1,17 @@
+server:
+  port: 8087
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://123.56.132.58:3306/dev?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&autoReconnect=true
+    username: root
+    password: RTmap123!@#
+    type: com.alibaba.druid.pool.DruidDataSource
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  type-aliases-package: com.example.stringbootbo.bean
+#logging:
+#  level:
+#    com.example.stringbootbo.mapper: info
+logging:
+  config: classpath:logback-boot.xml
